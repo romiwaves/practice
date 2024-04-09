@@ -154,4 +154,17 @@ const powerResult = calculator.power(divideResult, minusResult);
 //very nice age calculator
 const ageNow = parseInt(prompt("How old are you?"));
 //parseint = 숫자로 데이터 타입을 바꿔줌
-console.log(ageNow);
+
+if (isNaN(ageNow) || ageNow < 0) {
+    console.log("Please write a real positive number");
+} else if(ageNow < 18) {
+    console.log("You are too young.");
+} else if(ageNow >= 18 && ageNow <=50) {
+    console.log("You can drink.");
+} else if(ageNow > 50 && ageNow <=80) {
+    console.log("You should excercise.");
+} else if(ageNow > 80 && ageNow !== 100) {
+    console.log("you can do whatever you want.");
+} else if(ageNow === 100) {
+    console.log("wow.")
+}
