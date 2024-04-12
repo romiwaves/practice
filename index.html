@@ -9,14 +9,22 @@
 <body>
     <form class="hidden" id="login-form">
         <input
-            required
+            requiredbb
             maxlength="15"
             type="text"
             placeholder="What is your name?"
         />
-        <input type="submit" value="What is your name?" />
+        <input type="submit" value="Log in" />
     </form>
+    <h2 id="clock">00:00:00</h2> 
     <h1 id="greeting" class="hidden"></h1>
-    <script src="script.js"></script>
+    <div id="quote">
+        <span></span>
+        <span></span>
+    </div>
+    <script src="js/clock.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
 </body>
 </html>
